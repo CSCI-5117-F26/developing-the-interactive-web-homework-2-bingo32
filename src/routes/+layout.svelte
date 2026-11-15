@@ -24,3 +24,12 @@
 <main>
   {@render children()}
 </main>
+
+<style>
+  :global(html) {
+    background-image: url("pic.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+</style>

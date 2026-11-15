@@ -14,10 +14,10 @@
         <li><a <a href="#">Done</a></li>
       </ul>
     </div>
-    <article class="message is-link">
+    <article class="message is-info">
       <div class="message-header">
         <p>Let's add something fun!</p>
-        <button class="button is-link is-light">Add Task</button>
+        <button class="button is-info is-light">Add Task</button>
       </div>
       <div class="message-body">
         <div class="field">
