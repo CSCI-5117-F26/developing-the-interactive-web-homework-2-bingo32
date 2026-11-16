@@ -6,7 +6,6 @@
 <svelte:head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hello Bulma!</title>
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
@@ -14,22 +13,13 @@
   <title>Todo</title>
 </svelte:head>
 
-<section class="section">
-  <div class="container">
-    <h1 class="title">Hello There!</h1>
-    <p class="subtitle">Your friendly task manager!</p>
-  </div>
-</section>
-
 <main>
   {@render children()}
 </main>
 
 <style>
   :global(html) {
-    background-image: url("pic.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* background-color: #C0F5B0; */
+    background-color: #f4fafc;
   }
 </style>
