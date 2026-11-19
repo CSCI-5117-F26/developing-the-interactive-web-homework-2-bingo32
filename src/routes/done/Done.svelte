@@ -1,6 +1,12 @@
-<article class="message is-success">
-  <div class="message-header">
-    <p>Done</p>
-  </div>
-  <div class="message-body">More Stuff</div>
-</article>
+<script>
+  let props = $props();
+</script>
+
+{#each props.dones as task (task)}
+  <article class="message is-success">
+    <div class="message-header">
+      <p>{task.title}</p>
+    </div>
+    <div class="message-body">{task.summary}</div>
+  </article>
+{/each}

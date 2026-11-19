@@ -1,6 +1,7 @@
 <script>
   import Done from "./Done.svelte";
   import Nav from "../Nav.svelte";
+  let { data } = $props();
 </script>
 <section class="section">
   <div class="container">
@@ -14,6 +15,6 @@
     <a href="/todos" class="button is-info">See Todo Tasks</a>
     <br />
     <br />
-    <Done />
+    <Done dones={data.doneList}/>
   </div>
 </div>

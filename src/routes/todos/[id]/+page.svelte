@@ -1,16 +1,22 @@
 <script>
-  let props = $props();
+  /** @type {import('./$types').PageProps} */
+  let { data } = $props();
+  let title = $state(data.task.title);
+  let summary = $state(data.task.summary);
+  let description = $state(data.task.description);
 </script>
 
 <section class="section">
   <div class="container">
-    <h1 class="title">Modify Task</h1>
+    <h1 class="title">Edit Task</h1>
     <!-- <p class="subtitle"></p> -->
   </div>
 </section>
 
 <div class="columns is-centered">
   <div class="column is-half">
+    <p>this is task with id: {data.task.id}</p>
+
     <br />
     <a href="/todos" class="button is-info">See Todo Tasks</a>
 
@@ -19,7 +25,7 @@
     <form action="/todos" method="POST">
       <article class="message is-info">
         <div class="message-header">
-          <p>Let's add something fun!</p>
+          <p>Let's make some changes</p>
           <div>
             <button class="button is-info is-light" type="submit">Done</button>
           </div>
@@ -34,6 +40,7 @@
                 id="title"
                 name="title"
                 required
+                bind:value={title}
               />
             </div>
           </div>
@@ -47,6 +54,7 @@
                 id="summary"
                 name="summary"
                 required
+                bind:value={summary}
               />
             </div>
           </div>
@@ -58,7 +66,8 @@
                 class="textarea"
                 id="description"
                 name="description"
-                required></textarea>
+                required
+                bind:value={description}></textarea>
             </div>
           </div>
           <button class="button is-info submit">Save Changes</button>

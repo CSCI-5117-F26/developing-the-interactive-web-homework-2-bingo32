@@ -2,33 +2,7 @@
   import AddTask from "./AddTask.svelte";
   import Nav from "../Nav.svelte";
   import Todo from "./Todo.svelte";
-  let taskList = $state([
-    {
-      id: 1,
-      title: "bake",
-      summary: "bake cookies",
-      description: "bake 10 cookies",
-    },
-    {
-      id: 2,
-      title: "eat",
-      summary: "eat cookies",
-      description: "eat cookies under a tree",
-    },
-    {
-      id: 3,
-      title: "breath",
-      summary: "breath air",
-      description: "breath air always",
-    },
-  ]);
-
-  function add(task) {
-    taskList.push(task);
-  }
-  function remove(id) {
-    taskList = taskList.filter((task) => task.id !== id);
-  }
+  let { data } = $props();
 </script>
 
 <section class="section">
@@ -43,8 +17,8 @@
     <a href="/done" class="button is-success">See Done Tasks</a>
     <br />
     <br />
-    <AddTask {add} />
+    <AddTask/>
     <br />
-    <Todo tasks={taskList} />
+    <Todo tasks={data.taskList} />
   </div>
 </div>
