@@ -4,7 +4,7 @@
 	"private": true,
 	"type": "module",
 	"imports": {
-		"#lib": "./src/lib/index.js",
+		"#lib": "./src/lib/server.js",
 		"#lib/*": "./src/lib/*"
 	},
 	"scripts": {
@@ -19,5 +19,11 @@
 		"@sveltejs/vite-plugin-svelte": "^7.2.0",
 		"svelte": "^5.57.2",
 		"vite": "^8.3.0"
+	},
+	"dependencies": {
+		"@better-auth/mongo-adapter": "^1.7.28",
+		"@vercel/functions": "^3.11.4",
+		"better-auth": "^1.7.28",
+		"mongodb": "^7.9.1"
 	}
 }

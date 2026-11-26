@@ -1,23 +1,5 @@
 // place files you want to import through the `#lib` alias in this folder.
   export const taskList = [
-    {
-      id: 0,
-      title: "bake",
-      summary: "bake cookies",
-      description: "bake 10 cookies",
-    },
-    {
-      id: 1,
-      title: "eat",
-      summary: "eat cookies",
-      description: "eat cookies under a tree",
-    },
-    {
-      id: 2,
-      title: "breath",
-      summary: "breath air",
-      description: "breath air always",
-    },
   ];
   export const doneList = [{
       id: 3,

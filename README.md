@@ -14,6 +14,7 @@ Please fill out all of the following sections to help us grade your submission:
 
 <https://TODO.com/>
 
+
 ## Challenge Task
 
 - I started the challenge task: [yes/no]
@@ -22,8 +23,5 @@ Please fill out all of the following sections to help us grade your submission:
 ## Any Extra Notes?
 
 Fill in this with anything else you would like us to know about your submission.
-<br>
-Background Credits :
-<a href="https://unsplash.com/@kierinsightarchives?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kier in Sight Archives</a> on <a href="https://unsplash.com/photos/a-white-table-topped-with-lots-of-colorful-confetti-p7iaoHjWDbI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 <br>
 CSS Library <a href="https://bulma.io/">Bulma</a>

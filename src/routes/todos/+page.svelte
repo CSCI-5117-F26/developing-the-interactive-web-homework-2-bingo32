@@ -3,6 +3,7 @@
   import Nav from "../Nav.svelte";
   import Todo from "./Todo.svelte";
   let { data } = $props();
+  let tasks = $derived(data.tasks);
 </script>
 
 <section class="section">
@@ -17,8 +18,10 @@
     <a href="/done" class="button is-success">See Done Tasks</a>
     <br />
     <br />
-    <AddTask/>
+    <AddTask />
     <br />
-    <Todo tasks={data.taskList} />
+    {#each tasks as task (task.id)}
+      <Todo {task} />
+    {/each}
   </div>
 </div>

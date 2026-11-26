@@ -1,4 +1,4 @@
-import { doneList } from '#lib/index.js';
+import { doneList } from '#lib/server.js';
 
 export function load() {
   return { doneList };

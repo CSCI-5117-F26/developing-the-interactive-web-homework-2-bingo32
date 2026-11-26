@@ -1,5 +1,5 @@
 <script>
-  import { goto } from "$app/navigation";
+  import { refreshAll } from "$app/navigation";
   let title = $state("");
   let summary = $state("");
   let description = $state("");
@@ -14,7 +14,7 @@
       title = "";
       summary = "";
       description = "";
-      await goto("/todos", { invalidateAll: true });
+      await refreshAll();
     }
   }
 </script>
