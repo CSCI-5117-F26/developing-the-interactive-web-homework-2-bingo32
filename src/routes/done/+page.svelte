@@ -9,14 +9,12 @@
   <div class="container">
     <h1 class="title">Done Tasks</h1>
     <!-- <p class="subtitle">Your friendly task manager!</p> -->
+    <a href="/todos" class="button is-info">My Todo Tasks</a>
   </div>
 </section>
 <div class="columns is-centered">
   <div class="column is-half">
     <Nav />
-    <a href="/todos" class="button is-info">See Todo Tasks</a>
-    <br />
-    <br />
     <Done {doneList} />
   </div>
 </div>

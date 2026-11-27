@@ -10,14 +10,12 @@
   <div class="container">
     <h1 class="title">Todo Tasks</h1>
     <!-- <p class="subtitle"></p> -->
+    <a href="/done" class="button is-success">My Done Tasks</a>
   </div>
 </section>
 <div class="columns is-centered">
   <div class="column is-half">
     <Nav />
-    <a href="/done" class="button is-success">See Done Tasks</a>
-    <br />
-    <br />
     <AddTask />
     <br />
     {#each tasks as task (task._id)}
