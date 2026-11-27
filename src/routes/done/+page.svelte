@@ -2,7 +2,9 @@
   import Done from "./Done.svelte";
   import Nav from "../Nav.svelte";
   let { data } = $props();
+  let doneList = $derived(data.done);
 </script>
+
 <section class="section">
   <div class="container">
     <h1 class="title">Done Tasks</h1>
@@ -15,6 +17,6 @@
     <a href="/todos" class="button is-info">See Todo Tasks</a>
     <br />
     <br />
-    <Done dones={data.doneList}/>
+    <Done {doneList} />
   </div>
 </div>

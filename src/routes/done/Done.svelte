@@ -1,8 +1,8 @@
 <script>
-  let props = $props();
+  let { doneList } = $props();
 </script>
 
-{#each props.dones as task (task)}
+{#each doneList as task (task._id)}
   <article class="message is-success">
     <div class="message-header">
       <p>{task.title}</p>

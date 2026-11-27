@@ -20,7 +20,7 @@
     <br />
     <AddTask />
     <br />
-    {#each tasks as task (task.id)}
+    {#each tasks as task (task._id)}
       <Todo {task} />
     {/each}
   </div>

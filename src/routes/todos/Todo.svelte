@@ -1,6 +1,7 @@
 <script>
-  import { goto } from "$app/navigation";
+  import { refreshAll } from "$app/navigation";
   let { task } = $props();
+  const id = task._id.$oid;
   async function done(id) {
     const response = await fetch("/api/done", {
       method: "PUT",
@@ -8,7 +9,7 @@
       body: JSON.stringify({ id }),
     });
     const completed = await response.json();
-    if (completed) await goto("/done", { invalidateAll: true });
+    if (completed) await refreshAll();
   }
 </script>
 
@@ -16,8 +17,8 @@
   <div class="message-header">
     <p>{task.title}</p>
     <div>
-      <a href="/todos/{task.id} " class="button is-info is-light">Edit</a>
-      <button onclick={() => done(task.id)} class="button is-info is-light"
+      <a href="/todos/{id}" class="button is-info is-light">Edit</a>
+      <button onclick={() => done(id)} class="button is-info is-light"
         >Done</button
       >
     </div>

@@ -36,6 +36,7 @@
           id="title"
           name="title"
           required
+          maxlength="40"
           bind:value={title}
         />
       </div>
@@ -50,6 +51,7 @@
           id="summary"
           name="summary"
           required
+          maxlength="100"
           bind:value={summary}
         />
       </div>
@@ -63,6 +65,7 @@
           id="description"
           name="description"
           required
+          maxlength="400"
           bind:value={description}></textarea>
       </div>
     </div>
